@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        header {
+            text-align: center;
+            font-size: 26px;
+            margin: 20px 0px;
+
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 20% 60% 20%;
+            
+            height: 100vh;
+        }
+
+        .sidebar {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            margin-right: 10px;
+        }
+
+        .maincontent {
+            background-color: bisque;
+            text-align: center;
+            margin-right: 10px;
+        
+        }
+
+        .addtionalinfo {
+            text-align: center;
+            background-color: azure;
+        }
+    </style>
+</head>
+
+<body>
+    <header>Grid Layout</header>
+    <main>
+        <div class="sidebar">
+            Side Bar
+        </div>
+        <div class="maincontent">
+            Main Content
+        </div>
+
+        <div class="addtionalinfo">
+            Additional Info
+        </div>
+
+    </main>
+</body>
+
+</html>

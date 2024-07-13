@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        * {
+            background-color: lightgray;
+            color: white;
+        }
+
+        body {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding-top: 1rem;
+        }
+
+        .registrationForm {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+            margin: 0 auto;
+            gap: 20px;
+
+        }
+
+        .registrationForm h1 {
+            font-size: 26px;
+            text-align: center;
+        }
+
+        .registrationForm .registrationForm label {
+            margin-bottom: 4px;
+        }
+
+        .registrationForm input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px;
+            background-color: aliceblue;
+            color: black;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .registrationForm #submitButton {
+            padding: 10px 20px;
+            background-color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <form class="registrationForm">
+            <h1>User Registration</h1>
+            <label for="userName">
+                Enter UserName
+                <input id="userName" name="username" placeholder="User Name" type="text">
+            </label>
+            <label for="email">
+                Enter Email
+                <input id="email" name="email" placeholder="Email" type="email">
+            </label>
+            <label for="password">
+                Enter Password
+                <input id="password" name="password" placeholder="Password" type="password">
+            </label>
+
+            <input id="submitButton" type="submit" value="Register">
+
+        </form>
+
+    </div>
+</body>
+
+</html>
